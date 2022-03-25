@@ -1,0 +1,128 @@
+.emergency {
+    line-height: 1.5em;
+    padding: 1em 1.5em 2em;
+    border-radius: .5em;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%
+}
+
+@media screen and (max-width: 767px) {
+    .emergency {
+        width: 100%
+    }
+}
+
+.emergency .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.emergency:before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #36aaa0;
+    background: -webkit-linear-gradient(top, #36aaa0, #1b619d);
+    background: linear-gradient(to bottom right, #36aaa0, #1b619d);
+    z-index: -1;
+    opacity: .95
+}
+
+.emergency a {
+    color: #36aaa0;
+    text-decoration: none;
+    margin: 0 .5em;
+    font-size: 1.5em
+}
+
+.emergency em {
+    color: red;
+    font-style: normal;
+    font-weight: bold
+}
+
+.emergency .box {
+    display: block;
+    max-width: 50em;
+    margin: 0px auto;
+    background: #FFF;
+    padding: 2em;
+    border-radius: .5em;
+    position: relative
+}
+
+.emergency .box a.close {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    background: url(../images/icon_close.png) no-repeat center center #FFF;
+    background-size: 1.5em;
+    border-radius: 50%;
+    top: -.5em;
+    right: -1em;
+    text-indent: -9999px;
+    display: block;
+    box-shadow: 0px 0px 4px RGBA(0, 0, 0, 0.75);
+
+}
+.emergency .box a.close:hover, .emergency .box a.close:focus {
+    background: url(../images/icon_close.png) no-repeat center center #ffff00;
+    background-size: 1.5em;
+    border: solid 2px #F77810;
+
+}
+
+.emergency h2 {
+    font-size: 1.5em;
+    line-height: 1.45em;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 0.5em
+}
+
+.emergency ul {
+    padding-left: 0
+}
+
+.emergency ul > li {
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.55em
+}
+
+.emergency ul ul {
+    margin: 1em 0 1em 4em
+}
+
+@media screen and (max-width: 767px) {
+    .emergency ul ul {
+        margin: 1em 0 1em 2em
+    }
+}
+
+.emergency ul li ul li {
+    list-style: cjk-ideographic;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 1em
+}
+
+.emergency img {
+    max-width: 100%;
+}

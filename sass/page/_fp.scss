@@ -1,0 +1,10 @@
+.main .fp{
+	margin: 1em auto;
+	@include box-sizing;
+	padding:1em 2em;
+	background:#FFF;
+	font-size:.938em;
+	@include screen('mobile') {
+		padding:1em;
+	}
+}

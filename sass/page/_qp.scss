@@ -1,0 +1,219 @@
+.main .qp {
+    margin: 0 auto;
+    @include box-sizing;
+    // padding: 1em 2em;
+    // background: #FFF;
+    font-size: .938em;
+
+    @include screen('mobile') {
+        padding: 1em;
+    }
+
+    .qp_info {
+        background: lighten($secondaryColor, 45);
+        padding: 1em;
+        margin-top: 1em;
+        p {
+            margin: 0 0 1em;
+        }
+    }
+    .privacy_content {
+        overflow: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: 30em;
+        padding: 2em 1em;
+        font-size: .875rem;
+        background:#F1F1F1;
+        margin-bottom: 1em;
+    }
+    td:first-child{
+    	min-width:10em;
+    }
+}
+
+.perinfo{
+    box-shadow: 0px 0px 30px rgba(121, 102, 84, .25);
+    padding: 0 2em 0 0;
+    margin: 2em 4% .5em;
+    background: #FFF;
+    @include screen('mobile') {
+       padding: 0em; 
+   }
+}
+.areacode{
+    max-width: 3em;
+}
+.tel{
+    max-width: 10em;
+    @include screen('mobile') {
+        max-width: 72%;  
+    }
+}
+.ext{
+    max-width: 5em;
+}
+.postal{
+    max-width: 6em; 
+}
+.city{
+    max-width: 8em; 
+}
+.address{
+    max-width: 65%;
+    @include screen('mobile') {
+      max-width: 100%;  
+  }
+}
+.mobile{
+    max-width: 10em;
+    @include screen('mobile') {
+      max-width: 100%;  
+  }
+}
+.btn-pink {
+    font-size: 1.125em;
+    border: none;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: 0 auto!important 1em;
+    background: $lightColor;
+    border-color: $lightColor;
+    color: #FFF;
+    min-width: 12em;
+    @include border-radius(30px);
+    margin-top: 0em;
+    &:hover,
+    &:focus {
+        background: darken($lightColor, 10);
+        border: none !important;
+        color: #FFF;
+    }
+    @include screen('mobile') {
+        width: 80%;
+        float: none;
+        margin: 0 0 .4em;
+        padding: .5em 1em;
+        @include box-sizing;
+    }
+}
+.btn-gray {
+    font-size: 1.125em;
+    border: none;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: 0 auto!important 1em;
+    background: #524d48;
+    border-color: #524d48;
+    color: #FFF;
+    min-width: 12em;
+    @include border-radius(30px);
+    margin-top: 0em;
+    &:hover,
+    &:focus {
+        background: darken(#524d48, 10);
+        border: none !important;
+        color: #FFF;
+    }
+    @include screen('mobile') {
+        width: 80%;
+        float: none;
+        margin: 0 0 .4em;
+        padding: .5em 1em;
+        @include box-sizing;
+    }
+}
+.btn-gray2 {
+    font-size: 1em;
+    border: none;
+    display: inline-block;
+    padding: .5em;
+    margin: 1em;
+    background: #747474;
+    border-color: #747474;
+    color: #FFF;
+    @include border-radius(0px);
+    margin-top: 0em;
+    width: 182px;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        background: darken(#747474, 10);
+        border: none !important;
+        color: #FFF;
+    }
+    @include screen('mobile') {
+        width: 100%;
+        float: none;
+        margin: 0 0 .4em;
+        padding: .5em 1em;
+        @include box-sizing;
+    }
+}
+.btn-gray3 {
+    border: none;
+    display: inline-block;
+    padding: .5em;
+    margin: 0 0 0 2em;
+    background: #747474;
+    border-color: #747474;
+    color: #FFF;
+    @include border-radius(0px);
+    margin-top: 0em;
+    width: 10em;
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: .875em;
+    &:hover,
+    &:focus {
+        background: darken(#747474, 10);
+        border: none !important;
+        color: #FFF;
+    }
+    @include screen('mobile') {
+        // width: 80%;
+        float: none;
+        margin: 0 0 0 2em;
+        padding: .5em 1em;
+        @include box-sizing;
+    }
+}
+.headimg{
+    text-align: center;
+    img{
+        width: 110px;
+        height: 110px;
+        box-shadow: 0px 0px 20px rgba(121, 102, 84, .25);
+        margin: 2em auto .5em;
+    }
+    span{
+        display: block;
+        text-align: center;
+        width: 110px;
+        margin: 0 auto;
+        color:#333;
+        font-size: .875em;
+    }
+
+}
+.infolist{
+ text-align: left;
+ margin: 1em;
+ padding: 0;
+ li{
+    padding: .5em 0;
+    list-style: none;
+
+}   
+}
+
+.selall{
+    font-size: .875em;
+    vertical-align: middle;
+    margin-left: -1.8em;
+    @include screen('mobile') {
+        label{
+            display: inline-block;
+        }
+    }
+}
