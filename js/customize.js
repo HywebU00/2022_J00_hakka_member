@@ -237,13 +237,13 @@ $(function() {
             }
         }]
     });
-    $('.cp_slider').slickLightbox({
-        caption: 'caption',
-        lazyLoad: 'ondemand',
-        useHistoryApi: 'true',
-        ease: 'ease',
-        lazy: true
-    });
+    // $('.cp_slider').slickLightbox({
+    //     caption: 'caption',
+    //     lazyLoad: 'ondemand',
+    //     useHistoryApi: 'true',
+    //     ease: 'ease',
+    //     lazy: true
+    // });
     // cp_photo
     $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;

@@ -247,8 +247,8 @@
 }
 
 .loginbg{
-    background: url('../images/login_bg.jpg')no-repeat left top;
-    background-size: cover;
+    background: url('../images/login_bg.jpg')no-repeat left top -70px;
+    background-size: 100% auto;
     @include screen('mobile') {
         background: url('../images/login_bg.jpg')no-repeat center top;
         background-size: 350% auto;
@@ -367,6 +367,277 @@ a{
 
 }
 
+}
+
+
+
+}
+
+//myarea
+.myarea{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .col{
+        flex-basis: calc(100% / 12 * 4 - 4px);
+        max-width: calc(100% / 12 * 4 - 4px);
+        @include screen('mobile') {
+         flex-basis: calc(100% / 12 * 12 - 4px);
+         max-width: calc(100% / 12 * 12 - 4px); 
+     }
+     &:nth-child(1){
+        a{
+            background:#fff url('../images/application_02.png')no-repeat right 12px bottom;
+        }
+    }
+    &:nth-child(2){
+        a{
+            background:#fff url('../images/application_01.png')no-repeat right -5px bottom;
+        }
+    }
+    &:nth-child(3){
+        a{
+            background:#fff url('../images/application_03.png')no-repeat right -25px center;
+        }
+    }
+    &:nth-child(4){
+        a{
+            background:#fff url('../images/activity_bg.png')no-repeat right 5px bottom -5px;
+            background-size: auto 140px;
+        }
+    }
+    &:nth-child(5){
+        a{
+            background:#fff url('../images/service_bg.png')no-repeat right -20px bottom;
+            background-size: auto 130px;
+        }
+    }
+}
+a{
+    box-shadow: 0px 0px 30px rgba(121, 102, 84, .25);
+    display: block;
+    margin: 10px 50px 20px;
+    height: 146px;
+    @include screen('notebook') {
+        margin: 10px 30px 20px;
+    }
+    &:focus{
+        outline: solid 3px $importantColor;
+    }
+}
+h3 {
+    font-weight: bold;
+    margin: 48px 0 0 -22px;
+    padding: .8em .5em;
+    font-size: 1.125em;
+    letter-spacing: .1em;
+    background: rgb(65,25,3);
+    background: -moz-linear-gradient(90deg, rgba(65,25,3,1) 0%, rgba(85,41,21,1) 50%, rgba(105,57,38,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(65,25,3,1) 0%, rgba(85,41,21,1) 50%, rgba(105,57,38,1) 100%);
+    background: linear-gradient(90deg, rgba(65,25,3,1) 0%, rgba(85,41,21,1) 50%, rgba(105,57,38,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#411903",endColorstr="#693926",GradientType=1);
+    color:#fff;
+    width: 9.2em;
+    float: left;
+    text-align: center;
+}
+
+}
+
+//myarea2
+.myarea2{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    .col{
+        flex-basis: calc(100% / 12 * 4 - 4px);
+        max-width: calc(100% / 12 * 4 - 4px);
+        @include screen('tablet') {
+         flex-basis: calc(100% / 12 * 12 - 4px);
+         max-width: calc(100% / 12 * 12 - 4px); 
+     }
+     &:nth-child(1){
+        flex-basis: calc(100% / 12 * 8 - 4px);
+        max-width: calc(100% / 12 * 8 - 4px);
+        @include screen('tablet') {
+            flex-basis: calc(100% / 12 * 12 - 4px);
+            max-width: calc(100% / 12 * 12 - 4px); 
+        }
+        .mbox{
+            background:#fff url('../images/logo_s.png')no-repeat left 12em center;
+            background-size: 125px auto;
+            @include screen('mobile') {
+                background:#fff url('../images/logo_s.png')no-repeat left 11.5em top 30px;
+                background-size: 90px auto;  
+            }
+
+        }
+    }
+    &:nth-child(2){
+        .mbox{
+            background: url('none');
+        }
+    }
+    &:nth-child(3){
+        .mbox{
+            background: url('none');
+        }
+    }
+    &:nth-child(4){
+        flex-basis: calc(100% / 12 * 8 - 4px);
+        max-width: calc(100% / 12 * 8 - 4px);
+        @include screen('tablet') {
+         flex-basis: calc(100% / 12 * 12 - 4px);
+         max-width: calc(100% / 12 * 12 - 4px); 
+     }
+     .mbox{
+        background:#fff url('../images/6logo_s.png')no-repeat left 12em center;
+        background-size: 106px auto;
+        @include screen('mobile') {
+            background:#fff url('../images/6logo_s.png')no-repeat left 11.5em top 10px;
+            background-size: 80px auto;  
+        }
+    }
+}
+
+}
+.mbox{
+    box-shadow: 0px 0px 30px rgba(121, 102, 84, .25);
+    display: block;
+    margin: 10px 50px 20px;
+    height: 146px;
+    position: relative;
+    @include screen('notebook') {
+        margin: 10px 30px 20px;
+    }
+    @include screen('mobile') {
+        height: auto;
+        // min-height: 200px;
+    }
+    &:focus{
+        outline: solid 3px $importantColor;
+    }
+}
+h3 {
+    font-weight: bold;
+    margin: 48px 0 0 -22px;
+    padding: .8em .5em;
+    font-size: 1.125em;
+    letter-spacing: .1em;
+    background: rgb(65,25,3);
+    background: -moz-linear-gradient(90deg, rgba(65,25,3,1) 0%, rgba(85,41,21,1) 50%, rgba(105,57,38,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(65,25,3,1) 0%, rgba(85,41,21,1) 50%, rgba(105,57,38,1) 100%);
+    background: linear-gradient(90deg, rgba(65,25,3,1) 0%, rgba(85,41,21,1) 50%, rgba(105,57,38,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#411903",endColorstr="#693926",GradientType=1);
+    color:#fff;
+    width: 10.4em;
+    float: left;
+    text-align: center;
+    @include screen('mobile') {
+        margin: 25px 0 0 -22px;  
+    }
+}
+.vr{
+    a{
+        box-shadow: 0px 0px 30px rgba(121, 102, 84, .25);
+        background: #FFF url('../images/hoticon04.png')no-repeat left 12em center;
+        background-size: 88px auto;
+        display: block;
+        margin: 10px 50px 20px;
+        height: 146px;
+        @include screen('tablet') {
+            margin: 10px 30px 20px;
+            background: #FFF url('../images/hoticon04.png')no-repeat left 12em center;
+            background-size: 100px auto;
+        }
+        @include screen('mobile') {
+            margin: 10px 30px 20px;
+            background: #FFF url('../images/hoticon04.png')no-repeat left 11em top 20px;
+            background-size: 90px auto;
+            height: 110px;
+        }
+        &:focus{
+            outline: solid 3px $importantColor;
+        }
+    }
+}
+.museum{
+    a{
+        box-shadow: 0px 0px 30px rgba(121, 102, 84, .25);
+        background: #FFF url('../images/hoticon05.png')no-repeat left 12.5em center;
+        background-size: 60px auto;
+        display: block;
+        margin: 10px 50px 20px;
+        height: 146px;
+        @include screen('tablet') {
+            margin: 10px 30px 20px;
+            background: #FFF url('../images/hoticon05.png')no-repeat left 12.8em center;
+            background-size: 80px auto;
+        }
+        @include screen('mobile') {
+            margin: 10px 30px 20px;
+            background: #FFF url('../images/hoticon05.png')no-repeat left 11.5em top 20px;
+            background-size: 70px auto;
+            height: 110px;
+        }
+        &:focus{
+            outline: solid 3px $importantColor;
+        }
+    }
+}
+ul{
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  // justify-content:space-between;
+  // align-content: space-between;
+  list-style: none;
+  margin:0 1em 0 300px;
+
+  @include screen('mobile') {
+    margin:0 auto;
+    width: 90%;
+    padding: 0 0 30px 0;
+}
+li{
+    flex-basis: calc(100% / 12 * 4 - 4px);
+    max-width: calc(100% / 12 * 4 - 4px);
+    text-align: center;
+
+    a{
+        display: block;
+        height: 68px;
+        margin-top: 40px;
+        padding-top:45px;
+        border-right: dashed 1px #b5b0ae;
+        @include screen('mobile') {
+            margin-top: 20px;   
+        }
+    }
+    &:nth-child(1) a{
+        background: url('../images/hoticon01.png')no-repeat center top;
+        background-size: 40px auto;
+        border-left: dashed 1px #b5b0ae;
+
+    }
+    &:nth-child(2) a{
+        background: url('../images/hoticon02.png')no-repeat center top;
+        background-size: 40px auto;
+        
+    }
+    &:nth-child(3) a{
+        background: url('../images/hoticon03.png')no-repeat center top;
+        background-size: 40px auto;
+        
+    }
+}  
 }
 
 }
