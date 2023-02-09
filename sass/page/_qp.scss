@@ -38,8 +38,8 @@
     margin: 2em 4% .5em;
     background: #FFF;
     @include screen('mobile') {
-       padding: 0em; 
-   }
+     padding: 0em; 
+ }
 }
 .areacode{
     max-width: 3em;
@@ -197,12 +197,24 @@
 
 }
 .infolist{
- text-align: left;
- margin: 1em;
- padding: 0;
- li{
+   text-align: left;
+   margin: 1em;
+   padding: 0;
+   // width: 230px;
+
+   li{
     padding: .5em 0;
     list-style: none;
+    position: relative;
+    margin-left: 3em;
+    .title{
+        float: left;
+        margin-left: -3em;
+
+    }
+    .infotxt{
+        word-wrap:break-word;
+    }
 
 }   
 }
