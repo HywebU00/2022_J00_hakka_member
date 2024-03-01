@@ -30,6 +30,13 @@
     td:first-child{
     	min-width:10em;
     }
+    .form_content{
+        button{
+            &:focus{
+                outline: solid 2px #c00;
+            }
+        }
+    }
 }
 
 .perinfo{

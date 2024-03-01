@@ -36,6 +36,16 @@ a:focus {
         display: none;
     }
 }
+.innerpage{
+    #aC{
+        position: absolute;
+        top: 300px;
+        &:focus{
+        }
+
+    }
+}
+
 
 // more按鈕
 a.more {
